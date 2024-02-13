@@ -10,3 +10,4 @@ root = os.getcwd()
 os.cwd(os.path.join(root, "assets/sprites"))
 for dir in os.listdir():
     os.cwd(os.path.join(root, ))
+    
