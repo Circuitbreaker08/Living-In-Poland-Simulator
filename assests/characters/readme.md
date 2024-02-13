@@ -1,1 +1,1 @@
-Space for NPC data
+Space for NPC data. Plan is for maps to reference which NPCS are valid to load and under appropriate logic if applicable. This space will be for definition of sprites, dialogues, anything else that comes up.
