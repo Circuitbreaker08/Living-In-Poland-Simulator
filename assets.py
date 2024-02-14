@@ -25,4 +25,4 @@ for file in os.listdir():
     with open(file) as f:
         maps.update({file: json.loads(f.read())})
 
-print(maps)
+print(sprites)
