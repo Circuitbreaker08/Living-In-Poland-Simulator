@@ -1,13 +1,13 @@
 import pygame
 
-import assets
-
 pygame.init()
-screen = pygame.dislay.setmode((1920, 1080))
-pygame.display.setcaption("Living In Poland Simulator")
+screen = pygame.display.set_mode((1920, 1080))
+pygame.display.set_caption("Living In Poland Simulator")
+
+import assets
 
 running = True
 while running:
-    for event in pygame.events.get():
+    for event in pygame.event.get():
         if event == pygame.QUIT:
             running = False
