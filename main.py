@@ -7,26 +7,27 @@ pygame.display.set_caption("Living In Poland Simulator")
 
 from assets import sprites, maps
 
+chatting = False
 loaded_map = "test_room_1.json"
 position = [128, 128]
 
 def move(x, y):
     global position
-    """
+    position[0] += x
     for wall in maps[loaded_map]["walls"]:
-        if pygame.Rect((position[0], position[1]), (position[0] + 64, position[1] + 64)).colliderect(pygame.Rect()):
+        if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
+            position[0] -= x
             break
-    else:
-        position[0] += x
 
+    position[1] += y
     for wall in maps[loaded_map]["walls"]:
-        if False:
+        if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
+            position[1] -= y
             break
-    else:
-        position[1] += y
-    """
         
 def chat(message, portrait):
+    global chatting
+    chatting = True
     portrait = sprites["portraits"][portrait]
     screen.blit(portrait, (200, 700))
     screen.blit(pygame.font.Font(None, 48).render(message, False, (255, 255, 255)), (500, 800))
@@ -39,17 +40,20 @@ while running:
 
     screen.fill((0, 0, 0))
 
-    move(
-        3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a]),
-        3 * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
-    )
+    if not chatting:
+        print("hi")
+        move(
+            3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a]),
+            3 * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
+        )
 
     for tile in maps[loaded_map]["floors"] + maps[loaded_map]["walls"]:
         screen.blit(sprites["mapping"][tile["sprite"]], (tile["x"] * 64 + 960 - position[0], tile["y"] * 64 + 540 - position[1]))
 
     screen.blit(sprites["characters"]["debug.png"], (960, 540))
 
-    chat("Hi, Polski-san!", "bocchi_1000_yard_stare.png")
+    if False:
+        chat("Hi, Polski-san!", "bocchi_1000_yard_stare.png")
 
     pygame.display.flip()
     clock.tick(60)
