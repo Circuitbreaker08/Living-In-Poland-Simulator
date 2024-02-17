@@ -1,4 +1,5 @@
 import pygame
+import math
 
 pygame.init()
 screen = pygame.display.set_mode((1920, 1080))
@@ -9,18 +10,18 @@ from assets import sprites, maps
 
 chatting = False
 loaded_map = "test_room_1.json"
-position = [128, 128]
+position = [2 * 64, 2 * 64]
 
 def move(x, y):
     global position
     position[0] += x
-    for wall in maps[loaded_map]["walls"]:
+    for wall in maps[loaded_map]["walls"] + maps[loaded_map]["npcs"]:
         if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
             position[0] -= x
             break
 
     position[1] += y
-    for wall in maps[loaded_map]["walls"]:
+    for wall in maps[loaded_map]["walls"] + maps[loaded_map]["npcs"]:
         if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
             position[1] -= y
             break
@@ -57,8 +58,11 @@ while running:
 
     screen.blit(sprites["characters"]["debug.png"], (960, 540))
 
-    if False:
-        chat("Hi, Polski-san!", "bocchi_1000_yard_stare.png")
+    for npc in maps[loaded_map]["npcs"]:
+        screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
+        if pygame.key.get_pressed()[pygame.K_SPACE] and 2 <= math.dist(position, (npc["x"] * 64, npc["y"] * 64)):
+            chat("Hi, Polski-san!", "bocchi_1000_yard_stare.png")
+            break
 
     pygame.display.flip()
     clock.tick(60)

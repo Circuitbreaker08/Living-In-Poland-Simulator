@@ -56,5 +56,8 @@
         {"x": 0, "y": 2, "target_x": 5, "target_y": 2, "target_map": "test_room_1.json"},
         {"x": 0, "y": 3, "target_x": 5, "target_y": 3, "target_map": "test_room_1.json"},
         {"x": 0, "y": 4, "target_x": 5, "target_y": 4, "target_map": "test_room_1.json"}
+    ],
+    "npcs": [
+        
     ]
 }
