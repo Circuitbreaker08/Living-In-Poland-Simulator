@@ -25,17 +25,11 @@ def move(x, y):
         if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
             position[1] -= y
             break
-        
-def chat(message, portrait):
-    global chatting
-    chatting = True
-    portrait = sprites["portraits"][portrait]
-    screen.blit(portrait, (200, 700))
-    screen.blit(pygame.font.Font(None, 48).render(message, False, (255, 255, 255)), (500, 800))
 
 running = True
 while running:
-    for event in pygame.event.get():
+    events = pygame.event.get()
+    for event in events:
         if event == pygame.QUIT:
             running = False
 
@@ -60,9 +54,23 @@ while running:
 
     for npc in maps[loaded_map]["npcs"]:
         screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
-        if pygame.key.get_pressed()[pygame.K_SPACE] and 2 <= math.dist(position, (npc["x"] * 64, npc["y"] * 64)):
-            chat("Hi, Polski-san!", "bocchi_1000_yard_stare.png")
+        if not chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 128 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)):
+            chatting = True
+            portrait = sprites["portraits"][npc["portrait"]]
+            messages = npc["dialogue"]
+            num_messages = 0
             break
+
+    if chatting:
+        screen.blit(portrait, (200, 700))
+        screen.blit(pygame.font.Font(None, 48).render(messages[num_messages], False, (255, 255, 255)), (500, 800))
+        for event in events:
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    num_messages += 1
+                    print(num_messages)
+                    if num_messages >= len(messages):
+                        chatting = False
 
     pygame.display.flip()
     clock.tick(60)
