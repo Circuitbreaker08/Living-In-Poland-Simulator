@@ -35,9 +35,9 @@
         {"x": 5, "y": 0, "sprite": "stone_brick_wall_1.png"},
         {"x": 6, "y": 0, "sprite": "stone_brick_wall_1.png"},
         {"x": 6, "y": 1, "sprite": "stone_brick_wall_1.png"},
-
-
-
+        {"x": 6, "y": 2, "sprite": "stone_brick_wall_1.png"},
+        {"x": 6, "y": 3, "sprite": "stone_brick_wall_1.png"},
+        {"x": 6, "y": 4, "sprite": "stone_brick_wall_1.png"},
         {"x": 6, "y": 5, "sprite": "stone_brick_wall_1.png"},
         {"x": 6, "y": 6, "sprite": "stone_brick_wall_1.png"},
         {"x": 5, "y": 6, "sprite": "stone_brick_wall_1.png"},
@@ -47,14 +47,14 @@
         {"x": 1, "y": 6, "sprite": "stone_brick_wall_1.png"},
         {"x": 0, "y": 6, "sprite": "stone_brick_wall_1.png"},
         {"x": 0, "y": 5, "sprite": "stone_brick_wall_1.png"},
-        {"x": 0, "y": 4, "sprite": "stone_brick_wall_1.png"},
-        {"x": 0, "y": 3, "sprite": "stone_brick_wall_1.png"},
-        {"x": 0, "y": 2, "sprite": "stone_brick_wall_1.png"},
+
+
+
         {"x": 0, "y": 1, "sprite": "stone_brick_wall_1.png"}
     ],
     "loading_zones": [
-        {"x": 6, "y": 2, "target_x": 1, "target_y": 2, "target_map": "test_room_2.json"},
-        {"x": 6, "y": 3, "target_x": 1, "target_y": 3, "target_map": "test_room_2.json"},
-        {"x": 6, "y": 4, "target_x": 1, "target_y": 4, "target_map": "test_room_2.json"}
+        {"x": 0, "y": 2, "target_x": 5, "target_y": 2, "target_map": "test_room_1.json"},
+        {"x": 0, "y": 3, "target_x": 5, "target_y": 3, "target_map": "test_room_1.json"},
+        {"x": 0, "y": 4, "target_x": 5, "target_y": 4, "target_map": "test_room_1.json"}
     ]
 }

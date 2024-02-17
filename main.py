@@ -40,8 +40,13 @@ while running:
 
     screen.fill((0, 0, 0))
 
+    for zone in maps[loaded_map]["loading_zones"]:
+        if position[0] + 64 > zone["x"] * 64 and position[0] < zone["x"] * 64 + 64 and position[1] + 64 > zone["y"] * 64 and position[1] < zone["y"] * 64 + 64:
+            loaded_map = zone["target_map"]
+            position = [zone["target_x"] * 64, zone["target_y"] * 64]
+            break
+
     if not chatting:
-        print("hi")
         move(
             3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a]),
             3 * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
