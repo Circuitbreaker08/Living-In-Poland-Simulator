@@ -58,8 +58,7 @@ while running:
         screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
         if not chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 128 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)) and chat_cooldown < time.time():
             chatting = True
-            portrait = sprites["portraits"][npc["portrait"]]
-            messages = npc["dialogue"]
+            messages = npc["lines"]
             num_messages = 0
             chat_cooldown = time.time() + 0.1
             break
@@ -67,8 +66,8 @@ while running:
     if chatting:
         pygame.draw.rect(screen, (0, 0, 0), pygame.rect.Rect((190, 690), (1540, 276)))
         pygame.draw.rect(screen, (255, 255, 255), pygame.rect.Rect((190, 690), (1540, 276)), width=5)
-        screen.blit(portrait, (200, 700))
-        screen.blit(pygame.font.Font(None, 48).render(messages[num_messages], False, (255, 255, 255)), (500, 800))
+        screen.blit(sprites["portraits"][messages[num_messages]["image"]], (200, 700))
+        screen.blit(pygame.font.Font(None, 48).render(messages[num_messages]["text"], False, (255, 255, 255)), (500, 800))
         for event in events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE and chat_cooldown < time.time():

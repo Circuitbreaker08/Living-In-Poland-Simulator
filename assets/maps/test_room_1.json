@@ -58,11 +58,11 @@
         {"x": 6, "y": 4, "target_x": 1, "target_y": 4, "target_map": "test_room_2.json"}
     ],
     "npcs": [
-        {"x": 1, "y": 1, "sprite": "bocchi_guitar.png", "portrait": "bocchi_1000_yard_stare.png",
-        "dialogue": [
-            "Hi, Polski-San!",
-            "Why are we in Poland?",
-            "Do anime girls get human rights in Poland?"
+        {"x": 1, "y": 1, "sprite": "bocchi_guitar.png", 
+            "lines": [
+                {"image": "bocchi_1000_yard_stare.png", "text": "Hi, Polski-San!"},
+                {"image": "bocchi_1000_yard_stare.png", "text": "Why are we in Poland?"},
+                {"image": "bocchi_1000_yard_stare.png", "text": "Do anime girls get human rights in Poland?"}
         ]
         }
     ]
