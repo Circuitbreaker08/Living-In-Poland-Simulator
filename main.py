@@ -10,6 +10,8 @@ pygame.display.set_caption("Living In Poland Simulator")
 from assets import sprites, maps
 
 chatting = False
+coding = False
+hacking = False
 chat_cooldown = 0
 loaded_map = "test_room_1.json"
 position = [2 * 64, 2 * 64]
@@ -75,6 +77,22 @@ while running:
                     if num_messages >= len(messages):
                         chat_cooldown = time.time() + 1
                         chatting = False
+
+    if coding:
+        """
+        Type the right command to get a productivity streak
+        Fend off distractions
+        Fight against oneself
+        """
+        pass
+
+    if hacking:
+        """
+        Timed strategic minigame
+        Inavade the system
+        Fight against time
+        """
+        pass
 
     pygame.display.flip()
     clock.tick(60)
