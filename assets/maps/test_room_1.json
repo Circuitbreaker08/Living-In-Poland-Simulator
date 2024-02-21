@@ -60,7 +60,9 @@
     "npcs": [
         {"x": 1, "y": 1, "sprite": "bocchi_guitar.png", "portrait": "bocchi_1000_yard_stare.png",
         "dialogue": [
-            "Hi, Polski-San!"
+            "Hi, Polski-San!",
+            "Why are we in Poland?",
+            "Do anime girls get human rights in Poland?"
         ]
         }
     ]

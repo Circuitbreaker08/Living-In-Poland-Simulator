@@ -1,4 +1,5 @@
 import pygame
+import time
 import math
 
 pygame.init()
@@ -9,6 +10,7 @@ pygame.display.set_caption("Living In Poland Simulator")
 from assets import sprites, maps
 
 chatting = False
+chat_cooldown = 0
 loaded_map = "test_room_1.json"
 position = [2 * 64, 2 * 64]
 
@@ -54,22 +56,26 @@ while running:
 
     for npc in maps[loaded_map]["npcs"]:
         screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
-        if not chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 128 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)):
+        if not chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 128 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)) and chat_cooldown < time.time():
             chatting = True
             portrait = sprites["portraits"][npc["portrait"]]
             messages = npc["dialogue"]
             num_messages = 0
+            chat_cooldown = time.time() + 0.1
             break
 
     if chatting:
+        pygame.draw.rect(screen, (0, 0, 0), pygame.rect.Rect((190, 690), (1540, 276)))
+        pygame.draw.rect(screen, (255, 255, 255), pygame.rect.Rect((190, 690), (1540, 276)), width=5)
         screen.blit(portrait, (200, 700))
         screen.blit(pygame.font.Font(None, 48).render(messages[num_messages], False, (255, 255, 255)), (500, 800))
         for event in events:
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
+                if event.key == pygame.K_SPACE and chat_cooldown < time.time():
                     num_messages += 1
                     print(num_messages)
                     if num_messages >= len(messages):
+                        chat_cooldown = time.time() + 1
                         chatting = False
 
     pygame.display.flip()
