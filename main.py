@@ -73,7 +73,6 @@ while running:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE and chat_cooldown < time.time():
                     num_messages += 1
-                    print(num_messages)
                     if num_messages >= len(messages):
                         chat_cooldown = time.time() + 1
                         chatting = False
