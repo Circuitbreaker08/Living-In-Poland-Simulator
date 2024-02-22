@@ -8,6 +8,7 @@ clock = pygame.time.Clock()
 pygame.display.set_caption("Living In Poland Simulator")
 
 from assets import sprites, maps
+import triggers
 
 chatting = False
 coding = False
@@ -39,12 +40,11 @@ while running:
 
     screen.fill((0, 0, 0))
 
-    for zone in maps[loaded_map]["loading_zones"]:
+    for zone in maps[loaded_map]["triggers"]:
         if position[0] + 64 > zone["x"] * 64 and position[0] < zone["x"] * 64 + 64 and position[1] + 64 > zone["y"] * 64 and position[1] < zone["y"] * 64 + 64:
-            loaded_map = zone["target_map"]
-            position = [zone["target_x"] * 64, zone["target_y"] * 64]
+            exec(zone["code"])
             break
-
+                 
     if not chatting:
         move(
             3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a]),

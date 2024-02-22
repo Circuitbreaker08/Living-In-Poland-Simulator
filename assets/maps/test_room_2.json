@@ -52,10 +52,10 @@
 
         {"x": 0, "y": 1, "sprite": "stone_brick_wall_1.png"}
     ],
-    "loading_zones": [
-        {"x": 0, "y": 2, "target_x": 5, "target_y": 2, "target_map": "test_room_1.json"},
-        {"x": 0, "y": 3, "target_x": 5, "target_y": 3, "target_map": "test_room_1.json"},
-        {"x": 0, "y": 4, "target_x": 5, "target_y": 4, "target_map": "test_room_1.json"}
+    "triggers": [
+        {"x": 0, "y": 2, "code": "triggers.move((5, 2), 'test_room_1.json')"},
+        {"x": 0, "y": 3, "code": "triggers.move((5, 3), 'test_room_1.json')"},
+        {"x": 0, "y": 4, "code": "triggers.move((5, 4), 'test_room_1.json')"}
     ],
     "npcs": [
         
