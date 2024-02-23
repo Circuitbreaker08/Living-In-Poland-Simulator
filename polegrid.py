@@ -21,6 +21,9 @@ floor_visible = True
 wall_visible = True
 trigger_visible = True
 
+wall_selected = True
+selected_sprite = "plank_floor.png"
+
 from assets import sprites
 
 os.chdir(os.path.join(root, "assets/maps"))
@@ -60,6 +63,8 @@ while running:
     pygame.draw.rect(screen, (0, 200, 0, 50), pygame.rect.Rect((tile[0] * 64 + 960 - position[0], tile[1] * 64 + 540 - position[1]), (64, 64)))
     screen.blit(pygame.font.Font(None, 48).render(str(tuple(tile)), False, (255, 255, 255)), (0, 70))
 
+    pygame.draw.rect(screen, (50, 50, 50), pygame.rect.Rect((0, 0, 500, 1080)))
+
     screen.blit(pygame.font.Font(None, 48).render("Quit", False, (255, 255, 255)), (0, 0))
     if mouse_down and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 0 and mouse[1] < 33:
         running = False
@@ -76,6 +81,33 @@ while running:
     screen.blit(pygame.font.Font(None, 48).render("Toggle Wall View", False, boolean_color[wall_visible]), (0, 165))
     if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 165 and mouse[1] < 198:
         wall_visible = not wall_visible
+
+    screen.blit(pygame.font.Font(None, 48).render({False: "Floors", True: "Walls"}[wall_selected], False, (255, 255, 255)), (0, 231))
+    if mouse_down and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 231 and mouse[1] < 264:
+        wall_selected = not wall_selected
+
+    screen.blit(pygame.font.Font(None, 48).render("Switch sprite (CMD!)", False, (255, 255, 255)), (0, 264))
+    if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 264 and mouse[1] < 297:
+        filename = input("Sprite filename (assets/sprites/mapping): ")
+        try:
+            selected_sprite = sprites["mapping"][filename]
+        except:
+            print("Bad file name") 
+
+    if mouse[0] > 500 and pygame.mouse.get_pressed()[0]:
+
+        for square in data[{False: "floors", True: "walls"}[wall_selected]]:
+            if square["x"] == tile[0] and square["y"] == tile[1]:
+                square["sprite"] = selected_sprite
+
+    if mouse[0] > 500 and pygame.mouse.get_pressed()[2]:
+        tiles = data[{False: "floors", True: "walls"}[wall_selected]]
+        for square in range(len(tiles)):
+            print(tiles[square]["x"])
+            if tiles[square]["x"] == tile[0] and tiles[square]["y"] == tile[0]:
+                print("Del")
+                data[{False: "floors", True: "walls"}[wall_selected]].pop(square)
+                break
 
     pygame.display.flip()
     clock.tick(60)
