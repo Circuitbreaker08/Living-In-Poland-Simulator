@@ -99,14 +99,17 @@ while running:
         for square in data[{False: "floors", True: "walls"}[wall_selected]]:
             if square["x"] == tile[0] and square["y"] == tile[1]:
                 square["sprite"] = selected_sprite
+                break
+        else:
+            data[{False: "floors", True: "walls"}[wall_selected]].append({"x": tile[0], "y": tile[1], "sprite": selected_sprite})
 
     if mouse[0] > 500 and pygame.mouse.get_pressed()[2]:
         tiles = data[{False: "floors", True: "walls"}[wall_selected]]
-        for square in range(len(tiles)):
-            print(tiles[square]["x"])
-            if tiles[square]["x"] == tile[0] and tiles[square]["y"] == tile[0]:
+        for i in range(len(tiles)):
+            square = tiles[i]
+            if square["x"] == tile[0] and square["y"] == tile[0]:
                 print("Del")
-                data[{False: "floors", True: "walls"}[wall_selected]].pop(square)
+                tiles.pop(i)
                 break
 
     pygame.display.flip()
