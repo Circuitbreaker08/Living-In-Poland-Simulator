@@ -4,6 +4,8 @@ import json
 import sys
 import os
 
+boolean_color = {False: (255, 0, 0), True: (0, 255, 0)}
+
 try:
     file = sys.argv[1]
 except:
@@ -31,15 +33,15 @@ while running:
     mouse = pygame.mouse.get_pos()
     mouse_down = False
     for event in events:
-        if event == pygame.QUIT:
+        if event.type == pygame.QUIT:
             running = False
-        elif event == pygame.MOUSEBUTTONDOWN:
+        elif event.type == pygame.MOUSEBUTTONDOWN:
             mouse_down = True
 
     screen.fill((0, 0, 0))
 
-    position[0] += 3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a])
-    position[1] += 3 * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
+    position[0] += (pygame.key.get_pressed()[pygame.K_LSHIFT] * 10 + 3) * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a])
+    position[1] += (pygame.key.get_pressed()[pygame.K_LSHIFT] * 10 + 3) * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
 
     if floor_visible:
         for tile in data["floors"]:
@@ -59,20 +61,20 @@ while running:
     screen.blit(pygame.font.Font(None, 48).render(str(tuple(tile)), False, (255, 255, 255)), (0, 70))
 
     screen.blit(pygame.font.Font(None, 48).render("Quit", False, (255, 255, 255)), (0, 0))
-    if pygame.mouse.get_pressed()[0] and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 0 and mouse[1] < 33:
+    if mouse_down and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 0 and mouse[1] < 33:
         running = False
     screen.blit(pygame.font.Font(None, 48).render("Save", False, (255, 255, 255)), (0, 33))
-    if pygame.mouse.get_pressed()[0] and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 33 and mouse[1] < 66:
+    if mouse_down and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 33 and mouse[1] < 66:
         running = False
 
-    screen.blit(pygame.font.Font(None, 48).render("Toggle Trigger View", False, (255, 255, 255)), (0, 99))
-    if pygame.mouse.get_pressed()[0] and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 99 and mouse[1] < 132:
+    screen.blit(pygame.font.Font(None, 48).render("Toggle Trigger View", False, boolean_color[trigger_visible]), (0, 99))
+    if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 99 and mouse[1] < 132:
         trigger_visible = not trigger_visible
-    screen.blit(pygame.font.Font(None, 48).render("Toggle Floor View", False, (255, 255, 255)), (0, 132))
-    if pygame.mouse.get_pressed()[0] and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 132 and mouse[1] < 165:
-        floor_visible = not floor_visible
-    screen.blit(pygame.font.Font(None, 48).render("Toggle Wall View", False, (255, 255, 255)), (0, 165))
-    if pygame.mouse.get_pressed()[0] and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 165 and mouse[1] < 198:
+    screen.blit(pygame.font.Font(None, 48).render("Toggle Floor View", False, boolean_color[floor_visible]), (0, 132))
+    if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 132 and mouse[1] < 165:
+        floor_visible = not floor_visible   
+    screen.blit(pygame.font.Font(None, 48).render("Toggle Wall View", False, boolean_color[wall_visible]), (0, 165))
+    if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 165 and mouse[1] < 198:
         wall_visible = not wall_visible
 
     pygame.display.flip()
