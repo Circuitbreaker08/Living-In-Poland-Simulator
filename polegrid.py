@@ -6,10 +6,13 @@ import os
 
 boolean_color = {False: (255, 0, 0), True: (0, 255, 0)}
 
+if getattr(sys, 'frozen', False):
+    os.chdir(os.path.dirname(sys.executable))
+
 try:
     file = sys.argv[1]
 except:
-    file = input("Map Filename")
+    file = input("Map Filename: ")
 pygame.init()
 screen = pygame.display.set_mode((1920, 1080))
 clock = pygame.time.Clock()
@@ -70,7 +73,8 @@ while running:
         running = False
     screen.blit(pygame.font.Font(None, 48).render("Save", False, (255, 255, 255)), (0, 33))
     if mouse_down and mouse[0] > 0 and mouse[0] < 70 and mouse[1] > 33 and mouse[1] < 66:
-        running = False
+        with open(file, "w") as f:
+            f.write(json.dumps(data))
 
     screen.blit(pygame.font.Font(None, 48).render("Toggle Trigger View", False, boolean_color[trigger_visible]), (0, 99))
     if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 99 and mouse[1] < 132:
@@ -90,9 +94,12 @@ while running:
     if mouse_down and mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 264 and mouse[1] < 297:
         filename = input("Sprite filename (assets/sprites/mapping): ")
         try:
-            selected_sprite = sprites["mapping"][filename]
+            sprites["mapping"][filename]
+            selected_sprite = filename
         except:
-            print("Bad file name") 
+            print("Bad file name")
+
+    screen.blit(sprites["mapping"][selected_sprite], (50, 297))
 
     if mouse[0] > 500 and pygame.mouse.get_pressed()[0]:
 
@@ -103,14 +110,10 @@ while running:
         else:
             data[{False: "floors", True: "walls"}[wall_selected]].append({"x": tile[0], "y": tile[1], "sprite": selected_sprite})
 
-    if mouse[0] > 500 and pygame.mouse.get_pressed()[2]:
-        tiles = data[{False: "floors", True: "walls"}[wall_selected]]
-        for i in range(len(tiles)):
-            square = tiles[i]
-            if square["x"] == tile[0] and square["y"] == tile[0]:
-                print("Del")
-                tiles.pop(i)
-                break
-
+    if mouse[0] > 500 and pygame.mouse.get_pressed()[2]: #for debugging get 2nd monitor and use debugger tools
+        for square in data[{False: "floors", True: "walls"}[wall_selected]]:
+            if square["x"] == tile[0] and square["y"] == tile[1]:
+                data[{False: "floors", True: "walls"}[wall_selected]].remove(square)
+                
     pygame.display.flip()
     clock.tick(60)

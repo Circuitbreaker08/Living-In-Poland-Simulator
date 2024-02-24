@@ -5,6 +5,13 @@ Loads everything into memory at the start of runtime
 import pygame
 import json
 import os
+import sys
+
+#Rip frozen out of the main file using sys.modules
+
+if getattr(sys, 'frozen', False):
+    print("Frozen")
+    os.chdir(os.path.dirname(sys.executable))
 
 sprites = {}
 maps = {}
