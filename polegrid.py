@@ -7,7 +7,10 @@ import os
 boolean_color = {False: (255, 0, 0), True: (0, 255, 0)}
 
 if getattr(sys, 'frozen', False):
+    frozen = True
     os.chdir(os.path.dirname(sys.executable))
+else:
+    frozen = False
 
 try:
     file = sys.argv[1]

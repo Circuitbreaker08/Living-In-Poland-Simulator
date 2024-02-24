@@ -7,21 +7,18 @@ import json
 import os
 import sys
 
-#Rip frozen out of the main file using sys.modules
-
-if getattr(sys, 'frozen', False):
-    print("Frozen")
+if getattr(sys.modules["__main__"], 'frozen', False):
     os.chdir(os.path.dirname(sys.executable))
 
 sprites = {}
 maps = {}
 
-os.chdir(os.path.join(os.path.split(__file__)[0], "assets/sprites"))
 root = os.getcwd()
+os.chdir("assets/sprites")
 
 for directory in os.listdir():
     sprites.update({directory: {}})
-    os.chdir(os.path.join(root, directory))
+    os.chdir(os.path.join(root, "assets/sprites", directory))
     if directory == "portraits":
         size = (256, 256)
     else:
@@ -29,7 +26,7 @@ for directory in os.listdir():
     for file in os.listdir():
         sprites[directory].update({file: pygame.transform.scale(pygame.image.load(file).convert_alpha(), size)})
 
-os.chdir(os.path.join(os.path.split(__file__)[0], "assets/maps"))
+os.chdir(os.path.join(root, "assets/maps"))
 root = os.getcwd()
 
 for file in os.listdir():
