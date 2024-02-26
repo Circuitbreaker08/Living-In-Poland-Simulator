@@ -58,6 +58,6 @@
         {"x": 0, "y": 4, "code": "triggers.move((5, 4), 'test_room_1.json')"}
     ],
     "npcs": [
-        
+
     ]
 }

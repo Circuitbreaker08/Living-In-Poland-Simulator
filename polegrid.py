@@ -67,7 +67,6 @@ while running:
     mouse_world = [mouse[0] - 960 + position[0], mouse[1] - 540 + position[1]]
     tile = [math.floor(mouse_world[0] / 64), math.floor(mouse_world[1] / 64)]
     pygame.draw.rect(screen, (0, 200, 0, 50), pygame.rect.Rect((tile[0] * 64 + 960 - position[0], tile[1] * 64 + 540 - position[1]), (64, 64)))
-    screen.blit(pygame.font.Font(None, 48).render(str(tuple(tile)), False, (255, 255, 255)), (0, 70))
 
     pygame.draw.rect(screen, (50, 50, 50), pygame.rect.Rect((0, 0, 500, 1080)))
 
@@ -103,6 +102,7 @@ while running:
             print("Bad file name")
 
     screen.blit(sprites["mapping"][selected_sprite], (50, 297))
+    screen.blit(pygame.font.Font(None, 48).render(str(tuple(tile)), False, (255, 255, 255)), (120, 310))
 
     if mouse[0] > 500 and pygame.mouse.get_pressed()[0]:
 
@@ -117,6 +117,6 @@ while running:
         for square in data[{False: "floors", True: "walls"}[wall_selected]]:
             if square["x"] == tile[0] and square["y"] == tile[1]:
                 data[{False: "floors", True: "walls"}[wall_selected]].remove(square)
-                
+ 
     pygame.display.flip()
     clock.tick(60)
