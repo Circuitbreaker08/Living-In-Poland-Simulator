@@ -60,12 +60,12 @@
     "npcs": [
         {"x": 4, "y": 2, "sprite": "programmer.png",
             "lines": [
-                {"image": "programmer.png", "text": "Booting programming", "code": "coding.init(); is_coding = True"}
+                {"image": "programmer.png", "text": "Booting programming", "code": "triggers.init_coding()"}
             ]
         },
         {"x": 4, "y": 4, "sprite": "anonymous.png",
             "lines": [
-                {"image": "anonymous.png", "text": "Booting hacking", "code": "hacking.init(); is_hacking = True"}
+                {"image": "anonymous.png", "text": "Booting hacking", "code": "triggers.init_hacking_()"}
             ]
         }
     ]

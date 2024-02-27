@@ -62,7 +62,7 @@ while running:
 
     for npc in maps[loaded_map]["npcs"]:
         screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
-        if not is_chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 100 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)) and chat_cooldown < time.time():
+        if not (is_chatting or is_coding or is_hacking) and pygame.key.get_pressed()[pygame.K_SPACE] and 100 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)) and chat_cooldown < time.time():
             is_chatting = True
             messages = npc["lines"]
             num_messages = 0
