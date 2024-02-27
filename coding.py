@@ -35,5 +35,3 @@ def code():
     mouse = getattr(sys.modules["__main__"], "mouse")
     if mouse[0] > file[0] and mouse[0] < file[0] + 64 and mouse[1] > file[1] and mouse[1] < file[1] + 64 and pygame.mouse.get_pressed()[0]:
         shuffle()
-
-init()
