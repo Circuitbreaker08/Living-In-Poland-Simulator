@@ -9,10 +9,12 @@ pygame.display.set_caption("Living In Poland Simulator")
 
 from assets import sprites, maps
 import triggers
+import coding
+import hacking
 
-chatting = False
-coding = False
-hacking = False
+is_chatting = False
+is_coding = True
+is_hacking = False
 chat_cooldown = 0
 loaded_map = "test_room_1.json"
 position = [2 * 64, 2 * 64]
@@ -45,7 +47,7 @@ while running:
             exec(zone["code"])
             break
                  
-    if not chatting:
+    if not (is_chatting or is_coding or is_hacking):
         move(
             3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a]),
             3 * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
@@ -58,14 +60,14 @@ while running:
 
     for npc in maps[loaded_map]["npcs"]:
         screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
-        if not chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 128 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)) and chat_cooldown < time.time():
-            chatting = True
+        if not is_chatting and pygame.key.get_pressed()[pygame.K_SPACE] and 128 >= math.dist(position, (npc["x"] * 64, npc["y"] * 64)) and chat_cooldown < time.time():
+            is_chatting = True
             messages = npc["lines"]
             num_messages = 0
             chat_cooldown = time.time() + 0.1
             break
 
-    if chatting:
+    if is_chatting:
         pygame.draw.rect(screen, (0, 0, 0), pygame.rect.Rect((190, 690), (1540, 276)))
         pygame.draw.rect(screen, (255, 255, 255), pygame.rect.Rect((190, 690), (1540, 276)), width=5)
         screen.blit(sprites["portraits"][messages[num_messages]["image"]], (200, 700))
@@ -80,23 +82,23 @@ while running:
                     num_messages += 1
                     if num_messages >= len(messages):
                         chat_cooldown = time.time() + 1
-                        chatting = False
+                        is_chatting = False
 
-    if coding:
+    if is_coding:
         """
         Type the right command to get a productivity streak
         Fend off distractions
         Fight against oneself
         """
-        print("coding")
+        coding.code()
 
-    if hacking:
+    if is_hacking:
         """
         Timed strategic minigame
         Inavade the system
         Fight against time
         """
-        print("hacking")
+        hacking.hack()
 
     pygame.display.flip()
     clock.tick(60)

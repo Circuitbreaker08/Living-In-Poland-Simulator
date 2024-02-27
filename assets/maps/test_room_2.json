@@ -60,12 +60,12 @@
     "npcs": [
         {"x": 4, "y": 2, "sprite": "programmer.png",
             "lines": [
-                {"image": "programmer.png", "text": "Booting programming", "code": "coding = True"}
+                {"image": "programmer.png", "text": "Booting programming", "code": "is_coding = True"}
             ]
         },
         {"x": 4, "y": 4, "sprite": "anonymous.png",
             "lines": [
-                {"image": "anonymous.png", "text": "Booting hacking", "code": "hacking = True"}
+                {"image": "anonymous.png", "text": "Booting hacking", "code": "is_hacking = True"}
             ]
         }
     ]
