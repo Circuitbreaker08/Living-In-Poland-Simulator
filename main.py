@@ -13,7 +13,7 @@ import coding
 import hacking
 
 is_chatting = False
-is_coding = True
+is_coding = False
 is_hacking = False
 chat_cooldown = 0
 loaded_map = "test_room_1.json"

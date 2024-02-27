@@ -9,15 +9,16 @@ screen: pygame.Surface = getattr(sys.modules["__main__"], "screen")
 def init():
     global initialized, goal, progress
     initialized = True
-    goal = 40
+    goal = 10
     progress = -1
     shuffle()
 
 def shuffle():
     global file, progress
-    file = (random.randint(250, 1670), random.randint(250, 580))
+    file = (random.randint(314, 1606), random.randint(314, 516))
     progress += 1
-
+    if progress == goal:
+        finish()
 
 def finish():
     setattr(sys.modules["__main__"], "is_coding", False)
