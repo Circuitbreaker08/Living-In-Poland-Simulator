@@ -40,6 +40,8 @@ while running:
         if event == pygame.QUIT:
             running = False
 
+    mouse = pygame.mouse.get_pos()
+
     screen.fill((0, 0, 0))
 
     for zone in maps[loaded_map]["triggers"]:
@@ -85,18 +87,11 @@ while running:
                         is_chatting = False
 
     if is_coding:
-        """
-        Type the right command to get a productivity streak
-        Fend off distractions
-        Fight against oneself
-        """
         coding.code()
 
     if is_hacking:
         """
-        Timed strategic minigame
-        Inavade the system
-        Fight against time
+        Stardew Valley Fishing fr fr
         """
         hacking.hack()
 
