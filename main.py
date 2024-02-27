@@ -73,6 +73,10 @@ while running:
         for event in events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE and chat_cooldown < time.time():
+                    try:
+                        exec(messages[num_messages]["code"])
+                    except:
+                        pass
                     num_messages += 1
                     if num_messages >= len(messages):
                         chat_cooldown = time.time() + 1
@@ -84,7 +88,7 @@ while running:
         Fend off distractions
         Fight against oneself
         """
-        pass
+        print("coding")
 
     if hacking:
         """
@@ -92,7 +96,7 @@ while running:
         Inavade the system
         Fight against time
         """
-        pass
+        print("hacking")
 
     pygame.display.flip()
     clock.tick(60)
