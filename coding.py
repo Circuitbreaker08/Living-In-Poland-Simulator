@@ -20,7 +20,7 @@ def shuffle():
 
 
 def finish():
-    setattr(sys.modules["__main__"], "coding", False)
+    setattr(sys.modules["__main__"], "is_coding", False)
 
 def code():
     pygame.draw.rect(screen, (0, 0, 0), pygame.rect.Rect((250, 250), (1420, 580)))
