@@ -90,9 +90,6 @@ while running:
         coding.code()
 
     if is_hacking:
-        """
-        Stardew Valley Fishing fr fr
-        """
         hacking.hack()
 
     pygame.display.flip()
