@@ -65,7 +65,7 @@
         },
         {"x": 4, "y": 4, "sprite": "anonymous.png",
             "lines": [
-                {"image": "anonymous.png", "text": "Booting hacking", "code": "triggers.init_hacking_()"}
+                {"image": "anonymous.png", "text": "Booting hacking", "code": "triggers.init_hacking()"}
             ]
         }
     ]
