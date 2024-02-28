@@ -18,9 +18,10 @@ is_hacking = False
 chat_cooldown = 0
 loaded_map = "test_room_1.json"
 position = [2 * 64, 2 * 64]
+rotation = 0
 
 def move(x, y):
-    global position
+    global position, rotation
     position[0] += x
     for wall in maps[loaded_map]["walls"] + maps[loaded_map]["npcs"]:
         if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
@@ -32,6 +33,15 @@ def move(x, y):
         if position[0] + 64 > wall["x"] * 64 and position[0] < wall["x"] * 64 + 64 and position[1] + 64 > wall["y"] * 64 and position[1] < wall["y"] * 64 + 64:
             position[1] -= y
             break
+
+    if abs(x) > abs(y) and x > 0:
+        rotation = 270
+    elif abs(x) > abs(y) and x < 0:
+        rotation = 90
+    elif abs(y) > abs(x) and y > 0:
+        rotation = 180
+    elif abs(y) > abs(x) and y < 0:
+        rotation = 0
 
 running = True
 while running:
@@ -58,7 +68,7 @@ while running:
     for tile in maps[loaded_map]["floors"] + maps[loaded_map]["walls"]:
         screen.blit(sprites["mapping"][tile["sprite"]], (tile["x"] * 64 + 960 - position[0], tile["y"] * 64 + 540 - position[1]))
 
-    screen.blit(sprites["characters"]["debug.png"], (960, 540))
+    screen.blit(pygame.transform.rotate(sprites["characters"]["mc.png"], rotation), (960, 540))
 
     for npc in maps[loaded_map]["npcs"]:
         screen.blit(sprites["characters"][npc["sprite"]], (npc["x"] * 64 + 960 - position[0], npc["y"] * 64 + 540 - position[1]))
