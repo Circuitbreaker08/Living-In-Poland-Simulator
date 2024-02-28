@@ -274,6 +274,18 @@
                "code": "triggers.init_hacking()"
             }
          ]
+      },
+      {
+         "x": 2,
+         "y": 5,
+         "sprite": "shopkeep.png",
+         "lines": [
+            {
+               "image": "anonymous.png",
+               "text": "Hello, shopper!",
+               "code": "triggers.init_shopping()"
+            }
+         ]
       }
    ]
 }

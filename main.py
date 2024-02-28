@@ -10,11 +10,15 @@ pygame.display.set_caption("Living In Poland Simulator")
 from assets import sprites, maps
 import triggers
 import coding
+import inventory
 import hacking
 
 is_chatting = False
 is_coding = False
 is_hacking = False
+is_shopping = False
+inventory_open = False
+
 chat_cooldown = 0
 loaded_map = "test_room_1.json"
 position = [2 * 64, 2 * 64]
@@ -59,7 +63,7 @@ while running:
             exec(zone["code"])
             break
                  
-    if not (is_chatting or is_coding or is_hacking):
+    if not (is_chatting or is_coding or is_hacking or is_shopping) or inventory_open:
         move(
             3 * (pygame.key.get_pressed()[pygame.K_d] - pygame.key.get_pressed()[pygame.K_a]),
             3 * (pygame.key.get_pressed()[pygame.K_s] - pygame.key.get_pressed()[pygame.K_w])
@@ -101,6 +105,12 @@ while running:
 
     if is_hacking:
         hacking.hack()
+
+    if inventory_open:
+        inventory.inventory()
+
+    if is_shopping:
+        inventory.shop()
 
     pygame.display.flip()
     clock.tick(60)
