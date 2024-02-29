@@ -1,0 +1,262 @@
+{
+   "floors": [],
+   "walls": [
+      {
+         "x": -4,
+         "y": -5,
+         "sprite": "planks.png"
+      },
+      {
+         "x": -4,
+         "y": -4,
+         "sprite": "planks.png"
+      },
+      {
+         "x": -3,
+         "y": -4,
+         "sprite": "planks.png"
+      },
+      {
+         "x": -3,
+         "y": -5,
+         "sprite": "planks.png"
+      },
+      {
+         "x": -4,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -3,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -3,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -2,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -2,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -1,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -1,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 1,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 1,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 4,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 5,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 6,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 2,
+         "y": -4,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -5,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -5,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -4,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": -5,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 7,
+         "y": -3,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 7,
+         "y": -2,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 7,
+         "y": -1,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 8,
+         "y": -1,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 8,
+         "y": -2,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 8,
+         "y": -3,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 8,
+         "y": -4,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 7,
+         "y": -4,
+         "sprite": "industrial_roof.png"
+      },
+      {
+         "x": 4,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -4,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 2,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 5,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 6,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      }
+   ],
+   "triggers": [],
+   "npcs": []
+}

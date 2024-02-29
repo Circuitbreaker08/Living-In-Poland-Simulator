@@ -1,0 +1,373 @@
+{
+   "floors": [
+      {
+         "x": -2,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -2,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -2,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -1,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -1,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -1,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -1,
+         "y": 3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 0,
+         "y": 3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": 3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": 2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 0,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": -2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": -3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": -3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 0,
+         "y": -3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -2,
+         "y": 2,
+         "sprite": "grass.png"
+      },
+      {
+         "x": -2,
+         "y": 3,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 0,
+         "y": 2,
+         "sprite": "grass.png"
+      },
+      {
+         "x": -1,
+         "y": -1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 4,
+         "y": -3,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "grass.png"
+      },
+      {
+         "x": -1,
+         "y": -4,
+         "sprite": "water.png"
+      },
+      {
+         "x": -1,
+         "y": -3,
+         "sprite": "water.png"
+      },
+      {
+         "x": -1,
+         "y": -2,
+         "sprite": "water.png"
+      },
+      {
+         "x": 0,
+         "y": -2,
+         "sprite": "water.png"
+      },
+      {
+         "x": 0,
+         "y": -1,
+         "sprite": "water.png"
+      },
+      {
+         "x": 0,
+         "y": 0,
+         "sprite": "water.png"
+      },
+      {
+         "x": 1,
+         "y": 0,
+         "sprite": "water.png"
+      },
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "water.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "water.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "water.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "water.png"
+      },
+      {
+         "x": 5,
+         "y": 1,
+         "sprite": "water.png"
+      }
+   ],
+   "walls": [
+      {
+         "x": -3,
+         "y": -1,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": -2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 4,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 3,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 2,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 1,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": 0,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": 1,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": 2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": 3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -2,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -1,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 1,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 2,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 3,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 4,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": 4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": 3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": 2,
+         "sprite": "bricks.png"
+      }
+   ],
+   "triggers": [],
+   "npcs": []
+}
