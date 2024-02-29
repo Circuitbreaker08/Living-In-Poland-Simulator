@@ -18,4 +18,3 @@ def init_hacking():
 
 def init_shopping():
     setattr(sys.modules["__main__"], "is_shopping", True)
-    inventory.init_shopping()

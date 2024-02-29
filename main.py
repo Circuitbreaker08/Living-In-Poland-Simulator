@@ -13,6 +13,9 @@ import coding
 import inventory
 import hacking
 
+satiation = 0
+money = 100
+
 is_chatting = False
 is_coding = False
 is_hacking = False
@@ -49,10 +52,16 @@ def move(x, y):
 
 running = True
 while running:
+    mouse_down = False
     events = pygame.event.get()
     for event in events:
-        if event == pygame.QUIT:
+        if event.type == pygame.QUIT:
             running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_down = True
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_TAB:
+                inventory_open = not inventory_open
 
     mouse = pygame.mouse.get_pos()
 
@@ -111,6 +120,11 @@ while running:
 
     if is_shopping:
         inventory.shop()
+
+    screen.blit(pygame.font.Font(None, 48).render(f"Satiation: {int(satiation)}", False, (255, 255, 255)), (10, 10))
+    screen.blit(pygame.font.Font(None, 48).render(f"{money}zł", False, (255, 255, 255)), (10, 50))
+
+    satiation -= 0.001
 
     pygame.display.flip()
     clock.tick(60)
