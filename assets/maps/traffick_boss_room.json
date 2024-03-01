@@ -198,6 +198,10 @@
          "sprite": "bricks.png"
       }
    ],
-   "triggers": [],
+   "triggers": [
+      {"x": 2, "y": 2, "code": "triggers.move((4, -1), 'crime_ring.json')"},
+      {"x": 3, "y": 2, "code": "triggers.move((4, 0), 'crime_ring.json')"},
+      {"x": 4, "y": 2, "code": "triggers.move((4, 1), 'crime_ring.json')"}
+   ],
    "npcs": []
 }

@@ -173,6 +173,9 @@
          "sprite": "stone_brick_wall_1.png"
       }
    ],
-   "triggers": [],
+   "triggers": [
+      {"x": -1, "y": -1, "code": "triggers.move((6, 0), 'office.json')"},
+      {"x": -1, "y": 0, "code": "triggers.move((6, -1), 'office.json')"}
+   ],
    "npcs": []
 }

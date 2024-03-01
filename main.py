@@ -12,9 +12,9 @@ import triggers
 import coding
 import inventory
 import hacking
-import music
+#import music
 
-music.start()
+#music.start()
 
 satiation = 0
 money = 100
@@ -26,7 +26,7 @@ is_shopping = False
 inventory_open = False
 
 chat_cooldown = 0
-loaded_map = "test_room_1.json"
+loaded_map = "house_room.json"
 position = [2 * 64, 2 * 64]
 rotation = 0
 

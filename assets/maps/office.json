@@ -693,6 +693,14 @@
          "sprite": "stone_brick_wall_1.png"
       }
    ],
-   "triggers": [],
+   "triggers": [
+      {"x": 0, "y": 5, "code": "triggers.move((-2, -3), 'important_street.json')"},
+      {"x": 1, "y": 5, "code": "triggers.move((-2, -3), 'important_street.json')"},
+      {"x": 2, "y": 5, "code": "triggers.move((-1, -3), 'important_street.json')"},
+      {"x": 3, "y": 5, "code": "triggers.move((-1, -3), 'important_street.json')"},
+
+      {"x": 7, "y": -1, "code": "triggers.move((0, 0), 'tech_boss_room.json')"},
+      {"x": 7, "y": 0, "code": "triggers.move((0, -1), 'tech_boss_room.json')"}
+   ],
    "npcs": []
 }

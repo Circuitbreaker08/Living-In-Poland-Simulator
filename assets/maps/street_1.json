@@ -3,7 +3,7 @@
       {
          "x": -3,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -3,
@@ -13,7 +13,7 @@
       {
          "x": -3,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -3,
@@ -23,22 +23,22 @@
       {
          "x": -2,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -1,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -1,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -1,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -2,
@@ -48,32 +48,32 @@
       {
          "x": -2,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -2,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": -1,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 1,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 1,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 1,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 1,
@@ -83,17 +83,17 @@
       {
          "x": 2,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 2,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 2,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 2,
@@ -103,27 +103,27 @@
       {
          "x": 3,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 3,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 3,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 4,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 5,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 6,
@@ -133,27 +133,27 @@
       {
          "x": 7,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 7,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 6,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 5,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 4,
          "y": 0,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 3,
@@ -163,32 +163,12 @@
       {
          "x": 8,
          "y": 0,
-         "sprite": "sidewalk.png"
-      },
-      {
-         "x": 9,
-         "y": 0,
-         "sprite": "sidewalk.png"
-      },
-      {
-         "x": 9,
-         "y": -1,
-         "sprite": "sidewalk.png"
-      },
-      {
-         "x": 9,
-         "y": -2,
-         "sprite": "sidewalk.png"
-      },
-      {
-         "x": 9,
-         "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 8,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 7,
@@ -198,42 +178,42 @@
       {
          "x": 6,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 5,
          "y": -3,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 5,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 4,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 6,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 8,
          "y": -1,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 8,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 7,
          "y": -2,
-         "sprite": "sidewalk.png"
+         "sprite": "sidewalk_2.png"
       },
       {
          "x": 4,
@@ -403,6 +383,47 @@
          "sprite": "grass.png"
       }
    ],
-   "triggers": [],
+   "triggers": [
+      {
+         "x": -4,
+         "y": -3,
+         "code": "triggers.move((-2, 2), 'house_room.json')"
+      },
+      {
+         "x": -4,
+         "y": -2,
+         "code": "triggers.move((-2, 2), 'house_room.json')"
+      },
+      {
+         "x": -4,
+         "y": -1,
+         "code": "triggers.move((-3, 2), 'house_room.json')"
+      },
+      {
+         "x": -4,
+         "y": 0,
+         "code": "triggers.move((-3, 2), 'house_room.json')"
+      },
+      {
+         "x": 9,
+         "y": -3,
+         "code": "triggers.move((-4, -3), 'important_street.json')"
+      },
+      {
+         "x": 9,
+         "y": -2,
+         "code": "triggers.move((-4, -2), 'important_street.json')"
+      },
+      {
+         "x": 9,
+         "y": -1,
+         "code": "triggers.move((-4, -1), 'important_street.json')"
+      },
+      {
+         "x": 9,
+         "y": 0,
+         "code": "triggers.move((-4, 0), 'important_street.json')"
+      }
+   ],
    "npcs": []
 }

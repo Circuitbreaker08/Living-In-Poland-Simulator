@@ -62,7 +62,7 @@ while running:
 
     if trigger_visible:
         for trigger in data["triggers"] + data["npcs"]:
-            pygame.draw.rect(screen, (0, 0, 200, 50), pygame.rect.Rect((trigger["x"] * 64 + 960 - position[0], trigger["y"] * 64 + 540 - position[1]), (64, 64)))    
+            pygame.draw.rect(screen, (0, 0, 200, 50), pygame.rect.Rect((trigger["x"] * 64 + 960 - position[0], trigger["y"] * 64 + 540 - position[1]), (64, 64)))
 
     mouse_world = [mouse[0] - 960 + position[0], mouse[1] - 540 + position[1]]
     tile = [math.floor(mouse_world[0] / 64), math.floor(mouse_world[1] / 64)]

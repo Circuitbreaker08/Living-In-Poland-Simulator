@@ -613,6 +613,9 @@
          "sprite": "stone_brick_wall_2.png"
       }
    ],
-   "triggers": [],
+   "triggers": [
+      {"x": -3, "y": 3, "code": "triggers.move((-3, -2), 'street_1.json')"},
+      {"x": -2, "y": 3, "code": "triggers.move((-3, -1), 'street_1.json')"}
+   ],
    "npcs": []
 }

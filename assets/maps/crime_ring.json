@@ -244,6 +244,16 @@
          "x": 5,
          "y": 1,
          "sprite": "water.png"
+      },
+      {
+         "x": -2,
+         "y": -3,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": -2,
+         "y": -2,
+         "sprite": "dirt.png"
       }
    ],
    "walls": [
@@ -366,8 +376,30 @@
          "x": 5,
          "y": 2,
          "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": -4,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": -3,
+         "y": -2,
+         "sprite": "bricks.png"
       }
    ],
-   "triggers": [],
+   "triggers": [
+      {"x": -2, "y": -4, "code": "triggers.move((7, 0), 'important_street.json')"},
+      {"x": -1, "y": -4, "code": "triggers.move((8, 0), 'important_street.json')"},
+
+      {"x": 5, "y": -1, "code": "triggers.move((2, 1), 'traffick_boss_room.json')"},
+      {"x": 5, "y": 0, "code": "triggers.move((3, 1), 'traffick_boss_room.json')"},
+      {"x": 5, "y": 1, "code": "triggers.move((4, 1), 'traffick_boss_room.json')"}
+   ],
    "npcs": []
 }
