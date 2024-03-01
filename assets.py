@@ -27,8 +27,10 @@ for directory in os.listdir():
         sprites[directory].update({file: pygame.transform.scale(pygame.image.load(file).convert_alpha(), size)})
 
 os.chdir(os.path.join(root, "assets/maps"))
-root = os.getcwd()
 
 for file in os.listdir():
     with open(file) as f:
         maps.update({file: json.loads(f.read())})
+
+print(root)
+os.chdir(root)

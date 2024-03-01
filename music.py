@@ -1,4 +1,4 @@
-import pygame.mixer.music as player
+from pygame.mixer import music as player
 import threading
 import random
 import sys
@@ -8,12 +8,14 @@ if getattr(sys.modules["__main__"], 'frozen', False):
     os.chdir(os.path.dirname(sys.executable))
 
 root = os.getcwd()
-os.chdir("assets/music")
+os.chdir(os.path.join(root, "assets/music"))
 songs = os.listdir()
 
 def play():
     while True:
         if not player.get_busy():
-            player.play(os.path.join(root, songs[random.randint(len(songs))]))
+            file = os.path.join(root, "assets/music", songs[random.randint(0, len(songs) - 1)])
+            player.load(file)
+            player.play()
 
 threading.Thread(target = play).start()

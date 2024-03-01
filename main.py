@@ -13,9 +13,7 @@ import triggers
 import coding
 import inventory
 import hacking
-#import music
-
-#music.start()
+import music
 
 satiation = 100
 money = 100
