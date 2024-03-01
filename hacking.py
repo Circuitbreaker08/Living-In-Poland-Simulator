@@ -13,6 +13,7 @@ def init():
     goal = 100
 
 def victory():
+    setattr(sys.modules["__main__"], "money", getattr(sys.modules["__main__"], "money") + 100)
     finish()
 
 def defeat():

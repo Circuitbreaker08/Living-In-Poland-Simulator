@@ -1,4 +1,5 @@
 import pygame
+import random
 import time
 import math
 
@@ -16,7 +17,7 @@ import hacking
 
 #music.start()
 
-satiation = 0
+satiation = 100
 money = 100
 
 is_chatting = False
@@ -27,7 +28,7 @@ inventory_open = False
 
 chat_cooldown = 0
 loaded_map = "house_room.json"
-position = [2 * 64, 2 * 64]
+position = [5 * 64, -3 * 64]
 rotation = 0
 
 def move(x, y):

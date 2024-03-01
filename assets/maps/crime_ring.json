@@ -401,5 +401,41 @@
       {"x": 5, "y": 0, "code": "triggers.move((3, 1), 'traffick_boss_room.json')"},
       {"x": 5, "y": 1, "code": "triggers.move((4, 1), 'traffick_boss_room.json')"}
    ],
-   "npcs": []
+   "npcs": [
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "crime_thug.png",
+         "lines": [
+            {
+               "image": "stache_borat.png",
+               "text": "We want some help with our drug and gun trafficking."
+            },
+            {
+               "image": "stache_borat.png",
+               "text": "We have new drugs and some arms that we'd love your help to distribute."
+            },
+            {
+               "image": "stache_borat.png",
+               "text": "They just came in."
+            },
+            {
+               "image": "stache_borat.png",
+               "text": "Just deliver it to this guy",
+               "code": "triggers.move((0, 2), 'traffick_map_full.json')"
+            }
+         ]
+      },
+      {
+         "x": 0,
+         "y": 2,
+         "sprite": "crime_thug_2.png",
+         "lines": [
+            {
+               "image": "french_borat.png",
+               "text": "The-the-the-the-the boss is wanting you..."
+            }
+         ]
+      }
+   ]
 }

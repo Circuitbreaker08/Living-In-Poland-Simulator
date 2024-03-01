@@ -520,5 +520,41 @@
          "code": "triggers.move((-1, -3), 'crime_ring.json')"
       }
    ],
-   "npcs": []
+   "npcs": [
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "hoodie_guy.png",
+         "lines": [
+            {
+               "image": "french_borat.png",
+               "text": "Yo, do you wanna see my band?"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "We're a reggae group here in this city, 'Around the Bloc.'"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "You might not think you like reggae,"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "but it has a cultural significance to us,"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "as people like us making music like ours"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "were the people to drive the communists out of Poland."
+            },
+            {
+               "image": "french_borat.png",
+               "text": "Groovy right?"
+            }
+         ]
+      }
+   ]
 }

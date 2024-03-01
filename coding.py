@@ -21,6 +21,7 @@ def shuffle():
         finish()
 
 def finish():
+    setattr(sys.modules["__main__"], "money", getattr(sys.modules["__main__"], "money") + 10)
     setattr(sys.modules["__main__"], "is_coding", False)
 
 def code():

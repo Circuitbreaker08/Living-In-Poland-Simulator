@@ -425,5 +425,44 @@
          "code": "triggers.move((-4, 0), 'important_street.json')"
       }
    ],
-   "npcs": []
+   "npcs": [
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "shopkeep.png",
+         "lines": [
+            {
+               "image": "shopkeep.png",
+               "text": "Have you been to the Fredric Chopin Philharmonic?"
+            },
+            {
+               "image": "shopkeep.png",
+               "text": "It's a great place to listen to classical music."
+            }
+         ]
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "hoodie_guy.png",
+         "lines": [
+            {
+               "image": "french_borat.png",
+               "text": "Hey, have you seen the art museum?"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "It has the painting Stanczyk in right now."
+            },
+            {
+               "image": "french_borat.png",
+               "text": "It is a favorite of mine, and a famous polish painting,"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "so if you haven't seen it yet you really should."
+            }
+         ]
+      }
+   ]
 }

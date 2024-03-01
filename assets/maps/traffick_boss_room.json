@@ -203,5 +203,34 @@
       {"x": 3, "y": 2, "code": "triggers.move((4, 0), 'crime_ring.json')"},
       {"x": 4, "y": 2, "code": "triggers.move((4, 1), 'crime_ring.json')"}
    ],
-   "npcs": []
+   "npcs": [
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "trafficker.png",
+         "lines": [
+            {
+               "image": "trafficker.png",
+               "text": "Here early aren't you?"
+            },
+            {
+               "image": "trafficker.png",
+               "text": "Well no matter, I have a job that only you can do."
+            },
+            {
+               "image": "trafficker.png",
+               "text": "You know what happens otherwise, ready?"
+            },
+            {
+               "image": "trafficker.png",
+               "text": "I know it's a little intimidating kid, only hack as agressively as you need too."
+            },
+            {
+               "image": "trafficker.png",
+               "text": "It's like fishing. Or should I say phishing?",
+               "code": "triggers.init_hacking()"
+            }
+         ]
+      }
+   ]
 }

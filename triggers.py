@@ -18,3 +18,8 @@ def init_hacking():
 
 def init_shopping():
     setattr(sys.modules["__main__"], "is_shopping", True)
+
+def chat(lines):
+    setattr(sys.modules["__main__"], "is_chatting", True)
+    setattr(sys.modules["__main__"], "messages", lines)
+    setattr(sys.modules["__main__"], "num_messages", 0)

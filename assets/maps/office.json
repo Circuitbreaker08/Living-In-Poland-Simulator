@@ -702,5 +702,51 @@
       {"x": 7, "y": -1, "code": "triggers.move((0, 0), 'tech_boss_room.json')"},
       {"x": 7, "y": 0, "code": "triggers.move((0, -1), 'tech_boss_room.json')"}
    ],
-   "npcs": []
+   "npcs": [
+      {
+         "x": 5,
+         "y": 2,
+         "sprite": "desk.png",
+         "lines": [
+            {
+               "image": "computer.png",
+               "text": "Booting programming",
+               "code": "triggers.init_coding()"
+            }
+         ]
+      },
+      {
+         "x": 5,
+         "y": -4,
+         "sprite": "tech_guy.png",
+         "lines": [
+            {
+               "image": "stache_borat.png",
+               "text": "I think that the boss was looking for you, you should hurry up and head in there."
+            }
+         ]
+      },
+      {
+         "x": -2,
+         "y": -4,
+         "sprite": "buisiness_man.png",
+         "lines": [
+            {
+               "image": "stache_borat.png",
+               "text": "Hey! Shouldn't you be getting to work newbie?"
+            }
+         ]
+      },
+      {
+         "x": 5,
+         "y": 3,
+         "sprite": "buisiness_man.png",
+         "lines": [
+            {
+               "image": "french_borat.png",
+               "text": "Mi-ah! Michalina, did you need any help? I know you're new here and all."
+            }
+         ]
+      }
+   ]
 }

@@ -7834,5 +7834,26 @@
       }
    ],
    "triggers": [],
-   "npcs": []
+   "npcs": [
+      {
+         "x": 36,
+         "y": -6,
+         "sprite": "hoodie_guy.png",
+         "lines": [
+            {
+               "image": "borat.png",
+               "text": "Thank you for gun and drugs"
+            },
+            {
+               "image": "borat.png",
+               "text": "Is a very nice!"
+            },
+            {
+               "image": "borat.png",
+               "text": "Here is cash, please no shoot!",
+               "code": "triggers.move((4, 1), 'crime_ring.json')"
+            }
+         ]
+      }
+   ]
 }
