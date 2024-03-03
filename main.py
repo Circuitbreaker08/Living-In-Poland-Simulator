@@ -132,7 +132,6 @@ while running:
 
     screen.blit(pygame.font.Font(None, 48).render("Quit", False, (255, 255, 255)), (10, 980))
     if mouse[0] > 0 and mouse[0] < 500 and mouse[1] > 980 and mouse[1] < 1080 and pygame.mouse.get_pressed()[0]:
-        print("hie")
         running = False
 
     pygame.display.flip()
