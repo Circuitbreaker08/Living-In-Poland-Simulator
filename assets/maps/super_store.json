@@ -369,7 +369,7 @@
          "sprite": "shopkeep.png",
          "lines": [
             {
-               "image": "shopkeep.png",
+               "image": "blank.png",
                "text": "Hello, shopper!",
                "code": "triggers.init_shopping()"
             }

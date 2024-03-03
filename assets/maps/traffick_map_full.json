@@ -7851,7 +7851,7 @@
             {
                "image": "borat.png",
                "text": "Here is cash, please no shoot!",
-               "code": "triggers.move((4, 1), 'crime_ring.json')"
+               "code": "money += 1000; triggers.move((4, 1), 'crime_ring.json')"
             }
          ]
       }

@@ -408,19 +408,19 @@
          "sprite": "crime_thug.png",
          "lines": [
             {
-               "image": "stache_borat.png",
+               "image": "blank.png",
                "text": "We want some help with our drug and gun trafficking."
             },
             {
-               "image": "stache_borat.png",
+               "image": "blank.png",
                "text": "We have new drugs and some arms that we'd love your help to distribute."
             },
             {
-               "image": "stache_borat.png",
+               "image": "blank.png",
                "text": "They just came in."
             },
             {
-               "image": "stache_borat.png",
+               "image": "blank.png",
                "text": "Just deliver it to this guy",
                "code": "triggers.move((0, 2), 'traffick_map_full.json')"
             }
@@ -432,7 +432,7 @@
          "sprite": "crime_thug_2.png",
          "lines": [
             {
-               "image": "french_borat.png",
+               "image": "blank.png",
                "text": "The-the-the-the-the boss is wanting you..."
             }
          ]

@@ -432,11 +432,11 @@
          "sprite": "shopkeep.png",
          "lines": [
             {
-               "image": "shopkeep.png",
+               "image": "blank.png",
                "text": "Have you been to the Fredric Chopin Philharmonic?"
             },
             {
-               "image": "shopkeep.png",
+               "image": "blank.png",
                "text": "It's a great place to listen to classical music."
             }
          ]
@@ -447,19 +447,19 @@
          "sprite": "hoodie_guy.png",
          "lines": [
             {
-               "image": "french_borat.png",
+               "image": "blank.png",
                "text": "Hey, have you seen the art museum?"
             },
             {
-               "image": "french_borat.png",
+               "image": "blank.png",
                "text": "It has the painting Stanczyk in right now."
             },
             {
-               "image": "french_borat.png",
+               "image": "blank.png",
                "text": "It is a favorite of mine, and a famous polish painting,"
             },
             {
-               "image": "french_borat.png",
+               "image": "blank.png",
                "text": "so if you haven't seen it yet you really should."
             }
          ]
