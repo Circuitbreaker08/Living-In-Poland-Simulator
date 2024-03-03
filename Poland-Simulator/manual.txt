@@ -1,0 +1,9 @@
+Run main.exe (keep it with the assets folder)
+
+W, A, S, and D to move
+
+SPACE to open conversation and advance it (must be in close range)
+
+Hacking minigame: hold left click to go right; otherwise it goes left, stay in blue
+
+This is a demo and the jankiest code I've ever written so do not expect this to be fun or challenging
