@@ -12,10 +12,13 @@ os.chdir(os.path.join(root, "assets/music"))
 songs = os.listdir()
 
 def play():
-    while True:
-        if not player.get_busy():
-            file = os.path.join(root, "assets/music", songs[random.randint(0, len(songs) - 1)])
-            player.load(file)
-            player.play()
+    try:
+        while True:
+            if not player.get_busy():
+                file = os.path.join(root, "assets/music", songs[random.randint(0, len(songs) - 1)])
+                player.load(file)
+                player.play()
+    except:
+        pass
 
 threading.Thread(target = play).start()

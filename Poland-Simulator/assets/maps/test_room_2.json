@@ -1,0 +1,291 @@
+{
+   "floors": [
+      {
+         "x": 1,
+         "y": 1,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 5,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 5,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 5,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 5,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 1,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 5,
+         "sprite": "plank_floor.png"
+      }
+   ],
+   "walls": [
+      {
+         "x": 0,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 1,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 5,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 5,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 5,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 3,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 2,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 1,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 0,
+         "y": 6,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 0,
+         "y": 5,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 0,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      }
+   ],
+   "triggers": [
+      {
+         "x": 0,
+         "y": 2,
+         "code": "triggers.move((5, 2), 'test_room_1.json')"
+      },
+      {
+         "x": 0,
+         "y": 3,
+         "code": "triggers.move((5, 3), 'test_room_1.json')"
+      },
+      {
+         "x": 0,
+         "y": 4,
+         "code": "triggers.move((5, 4), 'test_room_1.json')"
+      }
+   ],
+   "npcs": [
+      {
+         "x": 4,
+         "y": 2,
+         "sprite": "programmer.png",
+         "lines": [
+            {
+               "image": "programmer.png",
+               "text": "Booting programming",
+               "code": "triggers.init_coding()"
+            }
+         ]
+      },
+      {
+         "x": 4,
+         "y": 4,
+         "sprite": "anonymous.png",
+         "lines": [
+            {
+               "image": "anonymous.png",
+               "text": "Booting hacking",
+               "code": "triggers.init_hacking()"
+            }
+         ]
+      },
+      {
+         "x": 2,
+         "y": 5,
+         "sprite": "shopkeep.png",
+         "lines": [
+            {
+               "image": "anonymous.png",
+               "text": "Hello, shopper!",
+               "code": "triggers.init_shopping()"
+            }
+         ]
+      }
+   ]
+}

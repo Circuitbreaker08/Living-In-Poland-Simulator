@@ -1,0 +1,236 @@
+{
+   "floors": [
+      {
+         "x": 1,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": 1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": -1,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 5,
+         "y": -2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "dirt.png"
+      },
+      {
+         "x": 1,
+         "y": 0,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 1,
+         "y": -1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 1,
+         "y": -2,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 5,
+         "y": 0,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 3,
+         "y": -1,
+         "sprite": "desk.png"
+      }
+   ],
+   "walls": [
+      {
+         "x": 0,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": -2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": -1,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": 0,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": 1,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 0,
+         "y": 2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 1,
+         "y": 2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": 2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 6,
+         "y": 2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 6,
+         "y": 1,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 6,
+         "y": 0,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 6,
+         "y": -1,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 6,
+         "y": -2,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 6,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 5,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 4,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 2,
+         "y": -3,
+         "sprite": "bricks.png"
+      },
+      {
+         "x": 1,
+         "y": -3,
+         "sprite": "bricks.png"
+      }
+   ],
+   "triggers": [
+      {"x": 2, "y": 2, "code": "triggers.move((4, -1), 'crime_ring.json')"},
+      {"x": 3, "y": 2, "code": "triggers.move((4, 0), 'crime_ring.json')"},
+      {"x": 4, "y": 2, "code": "triggers.move((4, 1), 'crime_ring.json')"}
+   ],
+   "npcs": [
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "trafficker.png",
+         "lines": [
+            {
+               "image": "trafficker.png",
+               "text": "Here early aren't you?"
+            },
+            {
+               "image": "trafficker.png",
+               "text": "Well no matter, I have a job that only you can do."
+            },
+            {
+               "image": "trafficker.png",
+               "text": "You know what happens otherwise, ready?"
+            },
+            {
+               "image": "trafficker.png",
+               "text": "I know it's a little intimidating kid, only hack as agressively as you need too."
+            },
+            {
+               "image": "trafficker.png",
+               "text": "It's like fishing. Or should I say phishing?",
+               "code": "triggers.init_hacking()"
+            }
+         ]
+      }
+   ]
+}

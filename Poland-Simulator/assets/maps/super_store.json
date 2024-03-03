@@ -1,0 +1,379 @@
+{
+   "floors": [
+      {
+         "x": -1,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": -1,
+         "y": -2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": -1,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": -1,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": -1,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": -1,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 5,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 5,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 4,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 5,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": -3,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": -2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": -2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 5,
+         "y": -2,
+         "sprite": "desk.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "desk.png"
+      }
+   ],
+   "walls": [
+      {
+         "x": -2,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -2,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -2,
+         "y": 2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -2,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -1,
+         "y": 3,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 0,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 1,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 2,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 3,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 3,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 5,
+         "y": 3,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 6,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": -3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": -1,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 6,
+         "y": 0,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 6,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": 2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -2,
+         "y": -3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -2,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -1,
+         "y": -4,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 0,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 1,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 2,
+         "y": -4,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 3,
+         "y": -4,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 4,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 5,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      }
+   ],
+   "triggers": [
+      {"x": -2, "y": -2, "code": "triggers.move((10, -2), 'important_street.json')"},
+      {"x": -2, "y": -1, "code": "triggers.move((10, -1), 'important_street.json')"}
+   ],
+   "npcs": [
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "shopkeep.png",
+         "lines": [
+            {
+               "image": "shopkeep.png",
+               "text": "Hello, shopper!",
+               "code": "triggers.init_shopping()"
+            }
+         ]
+      }
+   ]
+}

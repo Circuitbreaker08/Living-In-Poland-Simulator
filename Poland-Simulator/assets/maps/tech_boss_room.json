@@ -1,0 +1,201 @@
+{
+   "floors": [
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "desk.png"
+      },
+      {
+         "x": 1,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 2,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 1,
+         "y": -1,
+         "sprite": "office_floor.png"
+      },
+      {
+         "x": 0,
+         "y": -1,
+         "sprite": "office_floor.png"
+      }
+   ],
+   "walls": [
+      {
+         "x": -1,
+         "y": 2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -1,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 0,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 1,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 2,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 3,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 3,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": -1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 1,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 0,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -1,
+         "y": -2,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -1,
+         "y": -1,
+         "sprite": "stone_brick_wall_1.png"
+      }
+   ],
+   "triggers": [
+      {"x": -1, "y": -1, "code": "triggers.move((6, 0), 'office.json')"},
+      {"x": -1, "y": 0, "code": "triggers.move((6, -1), 'office.json')"}
+   ],
+   "npcs": [
+      {
+         "x": 2,
+         "y": -1,
+         "sprite": "tech_boss.png",
+         "lines": [
+            {
+               "image": "techboss.png",
+               "text": "Hello, I am Aldona Broz, your manager."
+            },
+            {
+               "image": "techboss.png",
+               "text": "We're so glad to have you aboard."
+            },
+            {
+               "image": "techboss.png",
+               "text": "Just click on files and you'll do fine!"
+            }
+         ]
+      }
+   ]
+}

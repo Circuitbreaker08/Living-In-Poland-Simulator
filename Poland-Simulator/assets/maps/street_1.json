@@ -1,0 +1,468 @@
+{
+   "floors": [
+      {
+         "x": -3,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -3,
+         "y": -2,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -3,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -3,
+         "y": 0,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -2,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -1,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -1,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -1,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -2,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": -2,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -2,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": -1,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 1,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 1,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 1,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 1,
+         "y": 0,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 2,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 2,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 2,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 3,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 4,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 5,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 6,
+         "y": -1,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 7,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 7,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 6,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 5,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 4,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 8,
+         "y": 0,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 8,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 7,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 6,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 5,
+         "y": -3,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 5,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 6,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 8,
+         "y": -1,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 8,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 7,
+         "y": -2,
+         "sprite": "sidewalk_2.png"
+      },
+      {
+         "x": 4,
+         "y": -3,
+         "sprite": "sidewalk.png"
+      },
+      {
+         "x": 0,
+         "y": -3,
+         "sprite": "rails.png"
+      },
+      {
+         "x": 0,
+         "y": -2,
+         "sprite": "rails.png"
+      },
+      {
+         "x": 0,
+         "y": -1,
+         "sprite": "rails.png"
+      },
+      {
+         "x": 0,
+         "y": 0,
+         "sprite": "rails.png"
+      }
+   ],
+   "walls": [
+      {
+         "x": -4,
+         "y": -4,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": -3,
+         "y": -4,
+         "sprite": "stone_brick_wall_2.png"
+      },
+      {
+         "x": -2,
+         "y": -4,
+         "sprite": "grass.png"
+      },
+      {
+         "x": -1,
+         "y": -4,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 0,
+         "y": -4,
+         "sprite": "rails.png"
+      },
+      {
+         "x": 1,
+         "y": -4,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 2,
+         "y": -4,
+         "sprite": "stone_brick_wall_2.png"
+      },
+      {
+         "x": 3,
+         "y": -4,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 4,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 5,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 6,
+         "y": -4,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 7,
+         "y": -4,
+         "sprite": "stone_brick_wall_2.png"
+      },
+      {
+         "x": 8,
+         "y": -4,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 9,
+         "y": -4,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -4,
+         "y": 1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": -3,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": -2,
+         "y": 1,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": -1,
+         "y": 1,
+         "sprite": "stone_brick_wall_2.png"
+      },
+      {
+         "x": 0,
+         "y": 1,
+         "sprite": "rails.png"
+      },
+      {
+         "x": 1,
+         "y": 1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 2,
+         "y": 1,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 3,
+         "y": 1,
+         "sprite": "stone_brick_wall_2.png"
+      },
+      {
+         "x": 4,
+         "y": 1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 5,
+         "y": 1,
+         "sprite": "grass.png"
+      },
+      {
+         "x": 6,
+         "y": 1,
+         "sprite": "stone_brick_wall_1.png"
+      },
+      {
+         "x": 7,
+         "y": 1,
+         "sprite": "stone_brick_wall_3.png"
+      },
+      {
+         "x": 8,
+         "y": 1,
+         "sprite": "stone_brick_wall_2.png"
+      },
+      {
+         "x": 9,
+         "y": 1,
+         "sprite": "grass.png"
+      }
+   ],
+   "triggers": [
+      {
+         "x": -4,
+         "y": -3,
+         "code": "triggers.move((-2, 2), 'house_room.json')"
+      },
+      {
+         "x": -4,
+         "y": -2,
+         "code": "triggers.move((-2, 2), 'house_room.json')"
+      },
+      {
+         "x": -4,
+         "y": -1,
+         "code": "triggers.move((-3, 2), 'house_room.json')"
+      },
+      {
+         "x": -4,
+         "y": 0,
+         "code": "triggers.move((-3, 2), 'house_room.json')"
+      },
+      {
+         "x": 9,
+         "y": -3,
+         "code": "triggers.move((-4, -3), 'important_street.json')"
+      },
+      {
+         "x": 9,
+         "y": -2,
+         "code": "triggers.move((-4, -2), 'important_street.json')"
+      },
+      {
+         "x": 9,
+         "y": -1,
+         "code": "triggers.move((-4, -1), 'important_street.json')"
+      },
+      {
+         "x": 9,
+         "y": 0,
+         "code": "triggers.move((-4, 0), 'important_street.json')"
+      }
+   ],
+   "npcs": [
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "shopkeep.png",
+         "lines": [
+            {
+               "image": "shopkeep.png",
+               "text": "Have you been to the Fredric Chopin Philharmonic?"
+            },
+            {
+               "image": "shopkeep.png",
+               "text": "It's a great place to listen to classical music."
+            }
+         ]
+      },
+      {
+         "x": 3,
+         "y": 0,
+         "sprite": "hoodie_guy.png",
+         "lines": [
+            {
+               "image": "french_borat.png",
+               "text": "Hey, have you seen the art museum?"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "It has the painting Stanczyk in right now."
+            },
+            {
+               "image": "french_borat.png",
+               "text": "It is a favorite of mine, and a famous polish painting,"
+            },
+            {
+               "image": "french_borat.png",
+               "text": "so if you haven't seen it yet you really should."
+            }
+         ]
+      }
+   ]
+}

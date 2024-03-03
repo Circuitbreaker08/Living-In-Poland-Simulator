@@ -1,0 +1,72 @@
+{
+   "floors": [],
+   "walls": [
+      {
+         "x": 2,
+         "y": -4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": -4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": -4,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": -3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": -3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -3,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 2,
+         "y": -2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 3,
+         "y": -2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 4,
+         "y": -2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": 5,
+         "y": -2,
+         "sprite": "plank_floor.png"
+      },
+      {
+         "x": -1,
+         "y": 2,
+         "sprite": "plank_floor.png"
+      }
+   ],
+   "triggers": [],
+   "npcs": []
+}
