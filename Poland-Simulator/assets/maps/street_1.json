@@ -429,7 +429,7 @@
       {
          "x": 3,
          "y": -3,
-         "sprite": "shopkeep.png",
+         "sprite": "man.png",
          "lines": [
             {
                "image": "blank.png",
@@ -444,7 +444,7 @@
       {
          "x": 3,
          "y": 0,
-         "sprite": "hoodie_guy.png",
+         "sprite": "woman.png",
          "lines": [
             {
                "image": "blank.png",

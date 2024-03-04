@@ -524,7 +524,7 @@
       {
          "x": 3,
          "y": 0,
-         "sprite": "hoodie_guy.png",
+         "sprite": "man.png",
          "lines": [
             {
                "image": "blank.png",

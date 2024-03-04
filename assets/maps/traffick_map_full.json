@@ -7838,7 +7838,7 @@
       {
          "x": 36,
          "y": -6,
-         "sprite": "hoodie_guy.png",
+         "sprite": "man.png",
          "lines": [
             {
                "image": "borat.png",
